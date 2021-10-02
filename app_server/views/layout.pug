@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet',href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+  
+  body
+    nav.navbar.navbar-expand.navbar-dark
+      a.navbar-brand(href='/') 
+        img(src="/images/my_logo.jpg" weight="50" height="50" alt="Logo image") 
+        | &#32;Janvi Sutariya
+      div
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link(href='/') Home
+          li.nav-item
+            a.nav-link(href='/about') About 
+          li.nav-item
+            a.nav-link(href='/project') Project 
+          li.nav-item 
+            a.nav-link(href='/service') Service 
+          li.nav-item 
+            a.nav-link(href='/contact') Contact
+
+    div.wrapper
+      block content
+
+    footer.footer-area
+      .row 
+        .col-12 
+          small &copy; Copyright 2021. All Rights reserved. (References)

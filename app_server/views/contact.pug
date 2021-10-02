@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  div.text-center
+    br
+    br
+    h1 Contact Me Here!!
+    h5 You can also send message me from below form
+    br
+    form
+        .form-group.row
+            label.col-sm-2.col-form-label First Name :
+            .col-sm-10
+                input#inputEmail3.form-control(type='text' placeholder='First Name')
+        .form-group.row
+            label.col-sm-2.col-form-label Last Name  :
+            .col-sm-10
+                input#inputEmail3.form-control(type='text' placeholder='Last Name')
+        .form-group.row
+            label.col-sm-2.col-form-label Email Id  :
+            .col-sm-10
+                input#inputEmail3.form-control(type='email' placeholder='Email')
+
+        .form-group.row
+            label.col-sm-2.col-form-label Contact Number :
+            .col-sm-10
+                input#inputEmail3.form-control(type='number' placeholder='Contact Number')
+
+        .form-group.row
+            label.col-sm-2.col-form-label Message :
+            .col-sm-10
+                input#inputEmail3.form-control(type='textarea' placeholder='Enter Message Here')
+                
+        .form-group.row
+            .col-sm-10
+            button.btn.btn-primary(type='send') Send
+
+    
